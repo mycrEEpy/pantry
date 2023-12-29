@@ -1,16 +1,16 @@
-distributable: ~
+distributable:
+  url: https://registry.npmjs.org/@mongosh/cli-repl/-/cli-repl-{{version}}.tgz
+  strip-components: 1
 display-name: mongosh
 versions:
-  github: mongodb-js/mongosh
+  npm: '@mongosh/cli-repl'
 dependencies:
   nodejs.org: '*'
 build:
   dependencies:
     npmjs.com: '*'
-    curl.se: '*'
   script:
-    - curl -L https://registry.npmjs.org/@mongosh/cli-repl/-/cli-repl-{{version}}.tgz --output cli-repl-{{version}}.tgz
-    - npm i $ARGS
+    - npm install $ARGS .
     - run: ln -s ../libexec/bin/mongosh mongosh
       working-directory: "{{prefix}}/bin"
   env:
@@ -20,7 +20,6 @@ build:
       - --build-from-source
       - --prefix={{prefix}}/libexec
       - --unsafe-perm
-      - cli-repl-{{version}}.tgz
 provides:
   - bin/mongosh
 test:

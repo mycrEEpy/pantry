@@ -5,7 +5,7 @@ distributable:
 display-name: firebase
 
 versions:
-  github: firebase/firebase-tools
+  npm: firebase-tools
 
 dependencies:
   nodejs.org: "*"

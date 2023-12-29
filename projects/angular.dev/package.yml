@@ -2,7 +2,7 @@ distributable:
   url: https://registry.npmjs.org/@angular/cli/-/cli-{{version}}.tgz
   strip-components: 1
 versions:
-  github: angular/angular
+  npm: '@angular/cli'
 dependencies:
   nodejs.org: ^20
 build:

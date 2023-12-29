@@ -3,10 +3,7 @@ distributable:
   strip-components: 1
 
 versions:
-  url: https://npmjs.com/package/appium?activeTab=versions
-  match: /v\/\d+\.\d+\.\d+/
-  strip:
-    - /^v\//
+  npm: appium
 
 dependencies:
   npmjs.com: '*'

@@ -3,10 +3,7 @@ distributable:
   strip-components: 1
 
 versions:
-  url: https://www.npmjs.com/package/snaplet?activeTab=versions
-  match: /v\/\d+\.\d+\.\d+/
-  strip:
-    - /^v\//
+  npm: snaplet
 
 dependencies:
   nodejs.org: ^10.13.0 || ^12 || ^14 || ^16 || ^18 || ^20

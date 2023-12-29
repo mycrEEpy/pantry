@@ -18,7 +18,7 @@ build:
   dependencies:
     npmjs.com: ^10
   script:
-    - npm i $ARGS .
+    - npm install $ARGS .
   env:
     ARGS:
       - --global
